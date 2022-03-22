@@ -1,0 +1,1755 @@
+$darkGreen: #002A29
+$Green: #007A79
+$lightGreen: #F1F4F2
+$lightcoffee: #FFFCF6
+$coffee: #650C0C
+$lightCoffee: #C48E28
+$darkYellow: #FFB336
+$middelGray: #555555
+$darkBlue: #1C1C80
+$Blue: #54C3F1
+$jsun_blue: #205DAE
+$jsun_yellow: #F39921
+
+$font-family1: 'Noto Serif TC', "微軟正黑體", Arial, serif
+$larger-title-xl: 28px
+$larger-title: 24px
+$title-size-xl: 24px
+$title-size: 20px
+$subtitle-size-xl: 18px
+$subtitle-size: 17px
+$context-size-xl: 16px
+$context-size: 15px
+*
+    //border: 1px solid #000
+    box-sizing: border-box 
+    font-family: "微軟正黑體",Arial
+.bd
+    border: 1px solid blue
+html,body
+    position: relative
+    height: 100%
+    margin: 0
+    padding: 0
+body
+    position: relative
+ul, li
+    list-style: none
+    padding: 0px
+    margin: 0px
+h1,h2,h3,h3,h4,h5,h6
+    font-size: 16px
+    margin-bottom: 0.5rem
+p
+    font-size: 15px
+    margin-bottom: 0px
+.por
+    position: relative
+.menu ,.closed
+    position: absolute
+    top: 12px
+    right: 12px
+    display: inline-block
+    width: 48px
+    height: 48px
+    padding: 10px
+    border-radius: 99em
+    background-color: #fff
+    opacity: 0.6
+    z-index: 2
+    & div
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        & img
+            display: inline-block
+            font-size: 24px
+            flex: 1
+            width: 100%
+            height: 100%
+.contactBtn
+    position: absolute
+    right: 12px
+    bottom: 12px
+    & div
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 38px
+        height: 38px
+        padding: 4px
+        margin-top: 8px
+        border-radius: 99em
+        background-color: #fff
+        opacity: 0.8
+        cursor: pointer
+        overflow: hidden
+        
+        & img
+            display: inline-block
+            font-size: 24px
+            flex: 1
+
+.contentBody
+    min-height: 80vh
+.contact_icon
+    width: 36px
+    
+        
+    
+.main_home
+    display: flex
+   
+.main_block
+    overflow: hidden
+    position: relative
+.left,.right,.center
+    flex: 0 0 auto
+.left
+    background-color: $lightGreen
+    width: 100%
+.right
+    display: none
+    background-color: $darkGreen
+.center
+    width: 35%
+    display: none
+@media screen and ( min-width: 768px )
+    .left
+        width: 79.2%
+    .right
+        display: block
+        width: 20.8%
+@media screen and ( min-width: 1025px )
+    .center
+        display: block
+    .left,.right
+        width: 32.5%
+        
+    
+        
+.index_title, .index_p1
+    position: relative
+    vertical-align: top
+    font-family: $font-family1
+    font-weight: 600
+.index_p1
+    color: $Green
+
+.index_title
+    font-size: 36px
+    color: $darkGreen
+.center_img
+    position: relative
+    height: 100%
+    background-color: #fff
+.index_me
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    height: 100%
+    opacity: 1
+    transition: opacity 1s
+.index_img
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    min-height: 100%
+    max-height: 100%
+    opacity: 0
+    animation: round 25s linear infinite
+
+// @keyframes round
+
+//     4%
+//         opacity: 1
+//         left: 50%
+//     20%
+//         opacity: 1
+//         left: 50%
+//     24%
+//         opacity: 1
+//         left: 160%
+//     26%
+//         opacity: 0
+//         left: 160%
+//     28%
+//         opacity: 0
+//         left: -60%
+
+// .index_img:nth-child(5)
+// 	animation-delay: 0s
+// .index_img:nth-child(4)
+// 	animation-delay: 5s
+// .index_img:nth-child(3)
+// 	animation-delay: 10s
+// .index_img:nth-child(2)
+// 	animation-delay: 15s
+// .index_img:nth-child(1)
+// 	animation-delay: 20s
+
+    
+
+.index_pos
+    position: relative
+    top: 45%
+    left: 50%
+    width: 80%
+    height: 60%
+    transform: translate(-50%,-50%)
+    display: inline-block
+    vertical-align: top
+    .frameImg
+        position: absolute
+        width: 100%
+        height: 722px
+        
+    .index_pad_img
+        width: 100%
+        position: absolute
+        top: 0
+        left: 0
+        transition: opacity 1s
+   
+.menu_area
+    position: fixed
+    width: 100%
+    bottom: 100% //100
+    left: 0
+    right: 0
+    background-color: rgba(241,244,242,0.95)
+    transition: 0.8s ease
+    z-index: 20
+    // bottom: 0%
+    // height: 100%
+.menu_ul1
+    position: relative
+    top: 40%
+    left: 50%
+    transform: translate(-50%,-50%)
+    text-align: center
+    width: 60%
+
+
+
+.menu_li1
+    display: inline-block
+    float: left
+    width: 20%
+    & a
+        font-family: $font-family1
+        font-size: 20px
+        color: $darkGreen
+        font-weight: 600
+        text-decoration: none
+
+        & div
+            font-size: 14px
+            line-height: 12px
+.menu_title
+    position: relative
+    top: 38px
+    text-align: center
+    font-family: $font-family1
+    color: $Green
+    font-size: 16px
+    font-weight: 600
+    &::before
+        position: absolute
+        content: ""
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        width: 45%
+        height: 1px
+        background-color: $Green
+    &:after
+        position: absolute
+        content: ""
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+        width: 45%
+        height: 1px
+        background-color: $Green
+    .menuBox
+        position: relative
+        display: inline-block
+        width: 100px
+        height: 100px
+        border-radius: 50px
+        border: 1px solid $Green
+        background-color: $Green
+        div
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            color: #fff
+
+.menu_textArea
+    position: relative
+    margin-top: 0px
+    text-align: center
+    width: 60%
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: auto
+    margin-left: auto
+    @media screen and ( max-width: 767px )
+        margin-top: 70px
+    @media screen and ( min-width:  768px)
+        top: 40%
+        transform: translateY(-50%)
+@media screen and ( min-width: 768px )
+    .flex_ul1
+        display: flex
+    .flex_li1
+        display: inline-block
+.flex_li1
+    flex: 1
+    padding: 16px
+    margin-bottom: 0.5rem
+    cursor: pointer
+    @media screen and ( min-width: 768px )
+         margin-bottom: 0
+    & a
+        font-family: $font-family1
+        font-size: 20px
+        color: $darkGreen
+        font-weight: 600
+        text-decoration: none
+        transition: 0.5s
+    
+        @media screen and ( min-width: 768px )
+            font-size: 16px
+        @media screen and ( min-width: 992px )
+            font-size: 20px
+        & div
+            font-size: 14px
+            line-height: 12px
+    &>a:hover
+        text-shadow: 0px 0px 20px rgba(#9EC545, 0.8)
+        font-weight: 800
+    & div ul li a
+        font-size: 14px
+        font-weight: 400
+        color: $coffee
+        border-radius: 20px
+        padding: 2px 4px
+        @media screen and ( min-width: 992px )
+            padding: 2px 12px
+            
+        &:hover
+            background-color: lighten($darkYellow, 10)
+@media screen and ( min-width: 992px )   
+    .list_show
+        opacity: 0
+        position: relative
+        top: 20px
+        transition: 1s
+    .flex_li1:hover .list_show
+        opacity: 1
+        top: 0
+    .flex_li1:hover .list_control
+        text-shadow: 0px 0px 20px rgba(#9EC545, 1)
+        font-weight: 800
+
+@media screen and ( min-width: 768px )
+    .index_pad_img
+        width: 500px
+    .index_pos
+        width: 500px
+        height: 750px
+@media screen and ( max-width: 1024.98px )
+    .main_home
+        height: 100vh
+        //控制index.html中間那塊頁面大小縮放
+@media screen and ( min-width: 1025px )
+    .main_home
+        height: 100vh
+        background: linear-gradient( 90deg,$lightGreen 0%, $lightGreen 50%,$darkGreen 50%, $darkGreen 100%)
+        // aspect-ratio: 192 / 108
+    
+    .index_title, .index_p1
+        display: inline-block
+        -webkit-writing-mode: vertical-lr
+        writing-mode: vertical-lr
+    .index_pad_img
+        display: none
+    .index_pos
+        width: 180px
+        height: 280px
+
+//footer
+.footer
+    margin-top: 24px
+    border-top: 1px solid $Green
+    padding: 12px
+    div
+        font-size: 14px
+        font-family: $font-family1
+        color: $Green
+
+
+//body delete title-text
+.title_text
+    font-size: 14px
+    color: $Green
+    z-index: 5
+@media screen and (min-width:767.98px)
+    .title_text.has_active
+        background: linear-gradient(90deg, white 50%,$Green 50%)
+        background-clip: text
+        -webkit-background-clip: text
+        color: transparent
+.title_text.has_active2
+    color: white
+
+    //color: $Green
+   
+.main_page
+    position: relative
+    min-height: 100vh
+    //height: 100%
+    background-color: $lightGreen
+.about_flex-center
+    display: flex
+    align-items: center
+    @media screen and (min-width: 1025px)
+        height: 90vh
+.about_photo
+    display: none
+    position: absolute
+    width: 50%
+    right: 0
+    @media screen and (min-width: 1025px)
+        display: block
+.aboutme1
+    position: relative
+    overflow: hidden
+    @media screen and (min-width: 1025px)
+         height: 100vh
+
+.about_td1
+    flex: 0 0 auto
+    width: 100px
+.about_td2
+    flex: 0 0 auto
+    width: calc( 100% - 100px )
+.about_qhchen img
+    width: 350px
+.title_cn
+    font-size: 21px
+    font-family: $font-family1
+    color: $lightCoffee
+    font-weight: 600
+    
+.title_en
+    font-size: 14px
+    font-family: $font-family1
+    color: $coffee
+    font-weight: 600
+    margin-top: -8px
+.bgc_darkgreen
+    background-color: $Green
+//about
+.mb-125-5
+    margin-bottom: 3rem 
+.title_sm
+    font-size: 16px
+    font-family: $font-family1
+    color: $Green
+    font-weight: 600
+.about_img1
+    width: 80%
+
+        
+@media screen and ( min-width: 992px )
+    .col-769-3
+        -ms-flex: 0 0 25%
+        flex: 0 0 25%
+        max-width: 25%
+@media screen and ( min-width: 1025px )
+    .about_img-none
+        display: none
+    .about_active
+        background: linear-gradient(90deg, $Green 50%,white 50%)
+        background-clip: text
+        -webkit-background-clip: text
+        color: transparent
+    .mb-125-5
+        margin-bottom: 0
+    
+
+.title_skill
+    font-size: 15px
+    font-family: $font-family1
+    color: $coffee
+    font-weight: 600
+.skill_text
+    h6 
+        font-size: $subtitle-size
+        background-color: $Green
+        color: #fff
+        border-radius: 14px
+        padding: 0px 10px
+        margin-top: 16px
+
+//works
+@media screen and ( min-width: 1200px )
+    .col-2_10
+        flex: 0 0 auto
+        width: 20%
+    
+.work_nav,.resource_nav
+    text-align: left
+    @media screen and ( min-width:  576px)
+        text-align: right
+         
+.work_nav div,.resource_nav div ,.work_nav div
+    display: inline-block
+    padding: 2px 12px
+    margin: 8px
+    color: $Green
+    cursor: pointer
+.work_nav .active,.resource_nav .active ,.work_nav .active
+    background-color: $Green
+    border-radius: 20px
+    color: #fff
+.hover_inform
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    border-radius: 5px
+    overflow: hidden
+    width: 100%
+    height: 100%
+    transition: 0.6s ease
+    background-color: rgba(5,5,5,0.5) 
+    @media screen and (min-width: 1200px)
+        height: 0%
+        background-color: rgba(5,5,5,0.0) 
+.work_item:hover .hover_inform
+    height: 100%
+    background-color: rgba(5,5,5,0.5)
+
+.work_text
+    color: white
+    font-size: 14px
+    position: absolute
+    bottom: 8px
+    left: 50%
+    transform: translateX(-50%)
+    width: 90%
+.work_item
+    border-radius: 5px
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2)
+    cursor: pointer
+    position: relative
+    aspect-ratio: 16 / 11 
+    overflow: hidden 
+    & img
+        width: 100%
+        
+//page
+.main_page.page_Swiper
+    height: 100%
+.page_subTitle
+    color: $Green
+    font-size: 14px
+.page_text
+    font-size: 15px 
+    color: #333333   
+.page_btn
+    display: inline-block
+    border: 0
+    padding: 2px 10px
+    margin-left: 2px
+    margin-right: 2px
+    background-color: $Green
+    color: white
+    cursor: pointer
+//resource
+.hover_resource
+    position: absolute
+    bottom: 0px
+    left: 0
+    right: 0
+    border-radius: 5px
+    border-top-left-radius: 0px
+    border-top-right-radius: 0px
+    overflow: hidden
+    width: 100%
+    height: 60px
+    transition: 0.6s ease
+    background-color: rgba(255,255,255,1)
+
+
+.resource_text
+    // color: white
+    font-size: 14px
+    position: absolute
+    top: 6px
+    left: 50%
+    transform: translateX(-50%)
+    width: 90%
+    text-align: center
+    
+.resource_item
+    border-radius: 5px
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2)
+    cursor: pointer
+    position: relative
+    aspect-ratio: 68 / 61
+    overflow: hidden
+
+    &:hover .hover_resource
+        background-color: rgba(255,255,255,0.8)
+        height: 100% 
+        border-radius: 5px
+    & img
+        width: 100%
+        
+
+.rs_t1
+    font-size: 18px
+    color: $coffee
+    
+.rs_t2
+    font-size: 14px
+    color: $lightCoffee
+.rs_p
+
+    font-size: 14px
+    color: #555
+    padding-top: 6px
+//swiper css
+.poa_header
+    position: absolute
+    z-index: 99
+    left: 50%
+    // margin-top: 24px
+    // margin-bottom: 24px
+    transform: translateX(-50%)
+.swiper
+    width: 100%
+    height: 100%
+.swiper-slide
+    border: 0px solid #000
+    font-size: 15px
+    padding-top: 70px
+    padding-left: 16px
+    padding-right: 16px
+    padding-bottom: 16px
+    overflow: hidden
+
+
+//mywork_css-work1
+
+.web-content
+    padding-bottom: 16px
+    @media screen and ( min-width: 576px ) 
+        padding-bottom: 0px
+        min-height: calc( 60vh - 20px )
+    .textWhite
+        @media screen and ( min-width: 768px ) 
+            color: #fff!important
+    .ypro_titleColor
+        color: $darkBlue!important
+        @media screen and ( min-width: 768px ) 
+            color: #fff!important
+.work_topImg
+    width: 100%
+    max-height: 80vh
+    border-radius: 8px
+    //aspect-ratio: 1920 / 930
+    overflow: hidden
+    border: 1px solid $Green
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2)
+
+.work_title
+    font-family: $font-family1
+    font-size: 20px
+    font-weight: 600
+    padding-bottom: 8px
+    color: $Green
+.work_subTitle
+    font-size: 16px
+    font-weight: 600
+    
+.work_topImg img
+    width: 100%
+    object-fit: cover
+
+.work-row
+    --bs-gutter-x: 2rem
+    @media screen and ( min-width: 1200px )
+        align-items: center
+.vh-100
+    height: 100vh
+.work_one_title
+    text-align: center
+    font-family: Arial, serif
+    font-weight: bold
+    font-size: 74px
+    padding-top: 36px
+    color: $Green
+    margin-bottom: 0
+    @media screen and ( min-width: 992px )
+        font-size: 74px
+.work_one_title.fz
+    font-size: 60px
+    line-height: 26px
+    padding-top: 0px
+    padding-bottom: 1.2rem
+    margin-bottom: 0
+    @media screen and ( min-width: 992px )
+        font-size: 60px
+.work_one_title.C_ypro
+    color: transparent
+    -webkit-text-stroke: 1.5px $darkBlue
+   
+        
+.work_one_p
+    font-size: 20px
+    font-family: $font-family1
+    font-weight: 600
+    text-align: center
+    color: $darkGreen
+    margin-bottom: 0
+.work_one_p_en
+    text-align: center
+    font-family: $font-family1
+    font-size: 14px
+    color: $darkGreen
+    margin-bottom: 0
+.work_one_p.C_ypro
+    color: $darkBlue
+.work_one_p_en.C_ypro
+    color: $Blue
+
+.swatch
+    height: 25px
+    width: 25px
+    flex: 0 0 auto
+    background-color: #fff
+    display: inline-block
+.sw_ypro1
+    background-color: $darkBlue
+    border: 1px solid #fff
+.sw_ypro2
+    background-color: white
+    border: 1px solid #eee
+.sw_ypro3
+    background-color: $darkYellow
+    border: 1px solid #fff
+.sw_ypro4
+    background-color: $Blue
+    border: 1px solid #fff
+.sw_ypro5
+    background-color: $middelGray
+    border: 1px solid #fff
+.btnWeb
+    background-color: #fff
+    border-radius: 25px
+    font-size: 15px
+    font-family: $font-family1
+    padding: 6px 45px
+    
+    &:hover
+        font-weight: 600
+        box-shadow: 0px 0px 10px rgba(255,255,255,0.6)
+    &.ypro
+        background-color: $darkBlue
+        color: white
+        @media screen and ( min-width: 768px )
+            background-color: white
+            color: $darkBlue
+            
+
+.swiper-slide.bg_ypro
+    border: 0px solid #000
+    //background: linear-gradient(360deg, $darkBlue 50%,transparent 50%)
+    @media screen and ( min-width:  768px)
+        background: linear-gradient(90deg, $darkBlue 50%,transparent 50%)
+.swiper-slide.bg_ypro2
+    background-color: $darkBlue
+.webP2Box
+    display: none
+    @media screen and ( min-width: 768px )
+        display: block
+        position: absolute
+        height: 100%
+        top: 0
+        left: 50%
+        right: 0%
+        padding: 0
+        background-image: url(../img/)
+        overflow: hidden
+.webP2Img
+    height: 100%
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+    text-align: center
+.max-GridBox
+    width: 100%
+    padding-left: 0.75rem
+    padding-right: 0.75rem
+    margin-right: auto
+    margin-left: auto
+    
+    @media screen and ( min-width: 576px )
+        max-width: 540px
+    @media screen and ( min-width: 768px )
+        max-width: 720px
+    @media screen and ( min-width: 992px )
+        max-width: 960px
+    @media screen and ( min-width: 1200px )
+        max-width: 1140px
+    @media screen and ( min-width: 1400px )
+        max-width: 1320px
+    //>div
+        //border-radius: 20px
+        //overflow: hidden
+    >div>div
+        
+        border: 1px solid #fff
+        background-color: #fff
+        display: flex
+        align-items: center
+        padding: 0.5rem 1rem
+        color: $darkBlue
+        @media screen and ( min-width: 768px )
+            padding: 3.5rem 3rem
+            &:first-child
+                border-top-left-radius: 10px
+                >div:nth-child(1)
+                    background-color: darken($lightGreen, 0%)
+            &:nth-child(2)
+                border-top-right-radius: 10px
+                background-color: darken($lightGreen, 5%)
+                >div:nth-child(1)
+                    background-color: #fff
+            &:nth-child(3)
+                border-bottom-left-radius: 10px
+                background-color: darken($lightGreen, 5%)
+                >div:nth-child(1)
+                    background-color: #fff
+            &:nth-child(4)
+                border-bottom-right-radius: 10px
+                >div:nth-child(1)
+                    background-color: darken($lightGreen, 0%)
+        @media screen and ( min-width: 1024px ) and (max-height: 650px)
+            padding: 2rem 2rem
+        >div:nth-child(1)
+            flex: 0 0 auto
+            position: relative
+            //border: 1px solid #000
+            height: 70px
+            width: 70px
+            border-radius: 99rem
+            @media screen and ( min-width: 768px )
+                height: 120px
+                width: 120px
+                
+            img
+                position: relative
+                height: 100%
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+                @media screen and ( min-width: 768px )
+                    height: 70%
+            
+        >div:nth-child(2)
+            padding-left: 0.5rem
+            
+            @media screen and ( min-width: 768px )
+                padding-left: 2rem
+            >p
+                font-size: 14px
+                @media screen and ( min-width: 400px )
+                    font-size: 15px
+
+//new workPage_system
+.system-context
+    text-align: center
+    h1
+        font-size: $larger-title
+        font-family: $font-family1
+        color: $Green
+        font-weight: 600
+        @media screen and ( min-width: 992px )
+            font-size: $larger-title-xl
+            
+    p
+        font-size: $context-size
+        @media screen and ( min-width: 992px )
+            font-size: $context-size-xl
+        
+.system-lottie
+    height: 500px
+.system-block1
+    background-color: $Green
+    color: #fff
+.system-block2
+    h1
+        color: $Green
+.system-block3
+    background: -moz-linear-gradient(top, $Green 0%, $Green 50%, transparent 50%, transparent 100%)
+    background: -webkit-linear-gradient(top, $Green 0%,$Green 50%,transparent 50%,transparent 100%)
+    color: #fff
+.system-block1,.system-block2,.system-block3
+    h1
+        font-size: $title-size
+        font-weight: 600
+        font-family: $font-family1
+        @media screen and ( min-width: 992px )
+            font-size: $title-size-xl
+            
+            
+.system-grid
+    text-align: center
+    div
+        margin-bottom: 16px
+    h3
+        text-align: left
+        font-size: $subtitle-size
+        @media screen and ( min-width: 992px )
+            font-size: $subtitle-size-xl
+
+    img
+        width: 100%
+//系統網頁設計 workpage5
+.swiper-slide.bg_halfGreen
+    border: 1px solid #000
+    background: linear-gradient(90deg, $Green 50%,transparent 50%)
+    @media screen and ( max-width:  767.98px)
+        background: linear-gradient(360deg, $Green 50%,transparent 50%)
+.systembox
+    position: relative
+    height: 85vh
+.system-title
+    font-size: 21px
+    font-family: $font-family1
+    color: $Green
+    @media screen and ( min-width:  991px)
+        position: absolute
+        top: 45%
+        left: 50%
+        transform: translate(-50%,-50%)  
+    @media screen and ( min-width: 1200px )
+        font-size: 28px
+    @media screen and ( min-width: 1500px )
+        font-size: 36px
+.system-subtitle
+    font-size: 18px
+    font-family: $font-family1
+    color: $Green
+    @media screen and ( min-width: 991px )
+        font-size: 24px
+    span
+        font-family: $font-family1
+.system-memo
+    position: absolute
+    bottom: 0
+    font-size: 15px
+    color: $darkGreen
+    @media screen and ( max-height: 600px )
+        bottom: 24px
+        
+.swiper-slide.bg_system01
+    border: 1px solid #000
+    background: linear-gradient(90deg, $Green 35%,transparent 35%)
+    @media screen and ( max-width: 519px )
+        background: transparent
+        
+.col-35
+    -ms-flex: 0 0 35%
+    flex: 0 0 35%
+    max-width: 35%
+    @media screen and ( max-width: 519px )
+        -ms-flex: 0 0 100%
+        flex: 0 0 100%
+        max-width: 100%
+    &.p-set
+        padding-left: 0
+        padding-right: 3rem
+        @media screen and ( min-width: 992px )
+            padding-left: 3rem
+            padding-right: 3rem
+        @media screen and ( max-width: 519px )
+            padding-right: 0
+            
+        
+.col-65
+    -ms-flex: 0 0 65%
+    flex: 0 0 65%
+    max-width: 65%
+    @media screen and ( max-width: 519px )
+        -ms-flex: 0 0 100%
+        flex: 0 0 100%
+        max-width: 100%
+
+
+.fac8-p1
+    position: relative
+    top: 45%
+    transform: translateY(-50%)
+    @media screen and ( max-width: 519px )
+        background-color: $Green
+        padding: 8px      
+    &::before
+        content: ""
+        color: white
+        position: absolute
+        //margin-left: -16px
+        width: 1px
+        top: 30px
+        height: 290px
+        background-color: white
+        @media screen and ( max-width: 519px )
+            display: none
+    & h2
+        height: 320px
+        color: white
+        @media screen and ( max-width: 519px )
+            height: inherit
+            
+.fac8-p2
+    position: relative
+    color: white
+    font-size: 14px
+    @media screen and ( min-width: 991px )
+        font-size: 15px
+.fac8-p3
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    div img
+        width: 80%
+        @media screen and ( min-width: 991px)
+            width: 90%
+        @media screen and ( min-width: 1000px ) and ( max-width: 1025px ) and (min-height: 1300px)
+            width: 100%
+        @media screen and ( max-width: 519px )
+            width: 90%
+            
+        
+            
+.fac8-p4
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    &::before
+        content: ""
+        position: absolute
+        //margin-left: -16px
+        width: 1px
+        height: 140px
+        background-color: $Green
+        margin-left: -16px
+        @media screen and (min-width: 768px)
+            background-color: white
+    & h2
+        height: 85px
+        @media screen and (min-width: 768px)
+            color: white
+    & p
+        color: $Green
+        
+        @media screen and (min-width: 768px)
+            color: #fff
+            padding-right: 2rem
+.fac8-p5
+    padding-left: 1rem
+    padding-right: 1rem
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    @media screen and (min-width: 768px)
+        padding-left: 3rem
+        padding-right: 3rem
+.fac8-p6
+    display: flex
+    width: 100%
+    height: 70vh
+    justify-content: space-around
+    align-items: flex-start
+    @media screen and (min-width: 1000px)and (max-width: 1025px)  and (min-height:1300px)
+        flex-direction: column
+    @media screen and (max-width: 991.98px)
+        flex-direction: column
+.fac8-p7
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    @media screen and (min-width: 1000px) and (max-width: 1025px) and (min-height:1300px)
+        justify-content: start
+        display: block
+        align-self: center
+        width: 40%
+    @media screen and (max-width: 991.98px)
+        justify-content: start
+        display: block
+        align-self: center
+        width: 50%
+    @media screen and (max-width: 767.98px)
+        width: 60%
+    @media screen and (max-width: 650.98px)
+        width: 300px
+    @media screen and (max-width: 650.98px)
+        width: 240px
+    @media screen and (max-width: 350.98px)
+        width: 190px
+    & .fac8TY_pd
+        width: 100%
+        padding-left: 16px
+        padding-right: 16px
+        @media screen and (min-width: 1000px)and (max-width: 1025px)  and (min-height:1300px)
+            width: 130%
+    & .fac8TY_nb
+        width: 80px
+        position: absolute
+        top: 100%
+        right: -10%
+        transform: translateY(-50%)
+        @media screen and (min-width: 1500px)
+            width: 100px
+        @media screen and ( max-width: 640px )
+            width: 50px
+        @media screen and (max-width: 350.98px)
+            top: calc( 100% - 20px )
+            width: 30px 
+
+@media screen and (min-width: 992px) 
+    .r1
+        align-self: flex-end
+    .r2
+        align-self: center
+    .r3
+        align-self: flex-start
+.fac8PT-title
+    font-size: 36px
+    font-family: $font-family1
+    color: $Green
+    font-weight: 600
+    @media screen and (max-width: 640px)
+        font-size: 21px
+    @media screen and ( max-width: 440px )
+        font-size: 18px
+.systembox.line::before
+    content: ""
+    position: absolute
+    //margin-left: -16px
+    width: 1.5px
+    height: 100%
+    background-color: $Green
+    margin-left: -32px
+    @media screen and ( max-width: 440px )
+        display: none
+.Os1,.Os3,.Os5
+    display: flex
+    justify-content: center
+    align-items: center
+    aspect-ratio: 77 / 30
+    overflow: hidden
+    margin-bottom: 0.25rem
+    @media screen and ( min-width: 576px )
+        aspect-ratio: 77 / 50
+    img
+        width: 90%
+        @media screen and ( min-width: 576px )
+            width: 100%
+           
+.Os2,.Os4,.Os6
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 0.25rem
+    font-size: 14px
+    
+.Os2
+    background-color: $Green
+    color: white    
+.Os4
+    background-color: $Green
+    color: white 
+.Os6
+    background-color: $Green
+    color: white
+.fac8-p8
+    display: flex
+    @media screen and ( min-width: 991px )
+        justify-content: center
+        align-items: center
+    h2
+        padding-bottom: 16px
+        padding-left: 16px
+        padding-right: 16px
+        border-bottom: 1px solid $Green
+        margin-left: -16px
+        padding-right: -16px
+    p
+        
+        color: $coffee
+
+.fac8-p9
+    height: 80vh
+    overflow: hidden
+    img
+        border: 1px solid #999
+//workPage3
+.maxMap.po-center
+    @media screen and ( min-width: 1200px )
+        top: 40%
+        transform: translateY(-50%)
+.maxMap
+    position: relative
+    border: 1px solid #000
+    margin-right: auto
+    margin-left: auto
+    width: 100%
+    .ipadImg
+        text-align: left
+        // @media screen and ( min-width: 991px )
+        //     text-align: center
+        //     display: block
+        @media screen and ( min-width: 1200px )
+            text-align: center
+            display: block
+            
+    img
+            width: 100%
+    @media screen and ( min-width: 576px )
+        max-width: 540px
+    @media screen and ( min-width: 768px )
+        max-width: 720px
+    @media screen and ( min-width: 992px )
+        max-width: 960px
+        img
+            width: 700px
+    @media screen and ( min-width: 1200px )
+        max-width: 1140px
+        img
+            width: 700px
+    @media screen and ( min-width: 1400px )
+        max-width: 1320px
+        img
+            width: 960px
+    @media screen and ( min-width: 1550px )
+        max-width: 1470px
+        img
+            width: 1060px
+    @media screen and ( min-width: 1750px )
+        max-width: 1630px
+        img
+            width: 1160px
+.ipad1
+    position: absolute
+    width: 150px
+    vertical-align: top
+    //display: none
+    
+    h4
+        font-weight: 600
+        position: relative
+        // &::after
+        //     content: " "
+        //     position: absolute
+        //     top: 50%
+        //     transform: translateY(-50%)
+        //     width: 150px
+        //     background-color: red
+        //     height: 2px
+    p
+        font-size: 15px
+
+.ipad1_text1
+    position: relative
+    @media screen and ( min-width: 576px )
+       
+        h4::after
+            content: " "
+            top: 50%
+            transform: translateY(-50%)
+            width: 180px
+            background-color: red
+            height: 2px
+    @media screen and ( min-width: 1200px )
+        display: block
+        position: absolute
+        top: 100px
+        left: 20px
+    @media screen and ( min-width: 1400px )
+        top: 150px
+        left: 20px
+        h4::after
+            width: 155px
+    @media screen and ( min-width: 1550px )
+        h4::after
+            width: 190px
+    @media screen and ( min-width: 1750px )
+        top: 150px
+        left: 40px
+        h4::after
+             width: 195px
+
+        
+    
+.ipad1_text2
+    position: relative
+    @media screen and ( min-width: 576px )
+        h4::after
+            content: " "
+            top: 50%
+            transform: translateY(-50%)
+            width: 360px
+            background-color: red
+            height: 2px
+    @media screen and ( min-width: 1200px )
+        display: block
+        position: absolute
+        top: 235px
+        left: 20px
+    @media screen and ( min-width: 1400px )
+        top: 305px
+        left: 20px
+        h4::after
+            width: 400px
+    @media screen and ( min-width: 1550px )
+        h4::after
+            width: 450px
+    @media screen and ( min-width: 1750px )
+        top: 325px
+        left: 40px
+        h4::after
+            width: 480px
+
+.ipad1_text3
+    position: relative
+    @media screen and ( min-width: 576px )
+        h4::before
+            content: " "
+            top: 50%
+            transform: translateY(-50%)
+            width: 70px
+            background-color: red
+            height: 2px
+            left: -70px
+    @media screen and ( min-width: 1200px )
+        display: block
+        position: absolute
+        top: 90px
+        left: 950px
+    @media screen and ( min-width: 1400px )
+        top: 150px
+        left: 1150px
+    @media screen and ( min-width: 1550px )
+        left: 1300px
+        h4::before
+            width: 85px
+            left: -85px
+        
+    @media screen and ( min-width: 1750px )
+        top: 150px
+        left: 1420px
+        
+.ipad1_text4
+    position: relative
+    @media screen and ( min-width: 576px )
+        h4::before
+            content: " "
+            top: 50%
+            transform: translateY(-50%)
+            width: 70px
+            background-color: red
+            height: 2px
+            left: -70px
+    @media screen and ( min-width: 1200px )
+        display: block
+        position: absolute
+        top: 220px
+        left: 950px
+    @media screen and ( min-width: 1400px )
+        top: 300px
+        left: 1150px
+    @media screen and ( min-width: 1550px )
+        left: 1300px
+        h4::before
+            width: 85px
+            left: -85px
+    @media screen and ( min-width: 1750px )
+        top: 320px
+        left: 1420px
+//page_Jsun
+
+.swiper-slide.bg_jsun
+    @media screen and (min-width: 768px)
+        // background: -webkit-gradient(linear, left top, right top, color-stop(50%, #205DAE), color-stop(50%, transparent))
+        // background: linear-gradient(90deg, #205DAE 50%, transparent 50%)
+        background-color: $jsun_blue
+
+.swiper-slide.bg_jsun2
+    background-color: $jsun_blue
+.work_one_title.C_jsun, .work_one_p.C_jsun
+    color: $jsun_blue
+.work_one_title.C_jsun span, .work_one_p_en.C_jsun
+    color: $jsun_yellow
+.webP2Img.jsun
+    left: 30%
+.btnWeb.jsun
+    background-color: $jsun_blue
+    color: #fff
+    @media screen and ( min-width: 768px )
+        background-color: #fff
+        color: $jsun_blue
+.sw_jsun1
+    background-color: $jsun_blue
+    border: 1px solid #fff
+.sw_jsun2
+    background-color: #fff
+    border: 1px solid $jsun_blue
+.sw_jsun3    
+    background-color: $jsun_yellow
+    border: 1px solid #fff
+.web-content .jsun_titleColor
+    color: $jsun_blue!important
+    @media screen and ( min-width: 768px )
+            color: #fff!important
+
+//news-ypro 
+
+.cisLeft
+    position: relative
+    transition: 0.8s
+    padding: 16px
+    @media screen and ( min-width: 992px )
+        border: 2px solid $Green
+        overflow-Y: scroll
+        padding: 16px
+        position: fixed
+        width: 370px
+        height: 85%
+        top: 86px //70+16px
+    @media screen and ( min-width: 1200px )
+        width: 430px
+    @media screen and ( min-width: 1440px )
+        width: 480px
+    @media screen and ( min-width: 1920px )
+        width: 500px
+    &::-webkit-scrollbar
+        width: 8px
+        background-color: transparent
+    &::-webkit-scrollbar-thumb
+        background: $Green
+        border-radius: 10px
+    > *:not(.web_comBg1,.web_comBg2)
+        position: relative
+        z-index: 2
+    .title_lgbg
+        background-color: $Green
+        display: inline-block
+        position: relative
+        padding: 6px
+        margin-bottom: 16px
+        // margin-left: -16px
+        @media screen and ( min-width: 992px )
+            margin-bottom: 0
+            top: -16px
+            left: -16px
+        h1
+            font-size: $larger-title
+            color: #fff
+            font-family: $font-family1
+            font-weight: 600
+            border: 1px solid #fff
+            padding: 10px 16px
+            margin-bottom: 0
+                
+            @media screen and ( min-width: 1500px )
+                font-size: $larger-title-xl
+
+    h2
+        font-size: $subtitle-size
+        color: $darkGreen
+        margin-top: 4px
+        margin-bottom: 4px
+        font-weight: 600
+        opacity: 0.8
+        @media screen and ( min-width: 1500px )
+            font-size: $subtitle-size-xl
+    h3
+        font-size: $context-size
+        font-weight: 600
+        margin-bottom: 0
+        color: $coffee
+        @media screen and ( min-width: 1500px )
+            font-size: $context-size-xl
+            
+    p
+        font-size: $context-size
+        color: #333
+        margin-bottom: 8px
+        @media screen and ( min-width: 1500px )
+            font-size: $subtitle-size-xl
+    .web_comBg1,.web_comBg2
+        position: absolute
+        z-index: 0
+    .web_comBg1
+        top: 95px
+        left: 10px
+        @media screen and ( min-width: 992px )
+            top: 70px
+            left: 10px
+        
+    .web_comBg2
+        bottom: 20px
+        right: 20px
+
+.cisRight
+    img
+        margin-top: 4px
+        margin-bottom: 8px
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2)     
+
+.blockArea
+    position: relative
+    top: 70px
+    transition: 0.8s
+    padding-top: 16px
+    margin-bottom: 0
+    top: -16px
+    .type-font
+        font-size: 14px
+        font-weight: normal
+    > *:not(.web_comBg1,.web_comBg2)
+        padding-left: 16px
+        position: relative
+        z-index: 2
+    .title_lgbg
+        background-color: $Green
+        display: inline-block
+        position: relative
+        padding: 6px
+        margin-bottom: 16px 
+        h1
+            font-size: $larger-title
+            color: #fff
+            font-family: $font-family1
+            font-weight: 600
+            border: 1px solid #fff
+            padding: 10px 16px
+            margin-bottom: 0
+                
+            @media screen and ( min-width: 1500px )
+                font-size: $larger-title-xl
+
+    h2
+        font-size: $subtitle-size
+        color: $darkGreen
+        margin-top: 4px
+        margin-bottom: 4px
+        font-weight: 600
+        opacity: 0.8
+        @media screen and ( min-width: 1500px )
+            font-size: $subtitle-size-xl
+    h3
+        font-size: $context-size
+        font-weight: 600
+        margin-bottom: 0
+        color: $coffee
+        @media screen and ( min-width: 1500px )
+            font-size: $context-size-xl
+            
+    p
+        font-size: $context-size
+        color: #333
+        margin-bottom: 8px
+        @media screen and ( min-width: 1500px )
+            font-size: $subtitle-size-xl
+    .web_comBg1,.web_comBg2
+        position: absolute
+        z-index: 0
+    .web_comBg1
+        top: 95px
+        left: 10px
+        
+    .web_comBg2
+        bottom: 20px
+        right: 20px
+
+.goTop
+    @media screen and ( min-width: 992px )
+        height: 86%    
+        top: 30px
+        display: fl 
+
+
+
+//newsheader
+.headerBox
+    position: fixed
+    width: 100%
+    height: 70px
+    border-bottom: 1px solid $Green
+    z-index: 10
+    background-color: $lightGreen
+    top: 0px
+    transition: top .8s ease-in-out
+    &.hideup 
+        top: -70px!important
+.menuBtn
+    img
+        width: 24px
+.titleQH
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    font-size: 20px
+    font-weight: 600
+    color: $Green
+    font-family: $font-family1
+//.swiper-slide pt70px
+
+.mt-header
+    padding-top: 90px
+
+//workpage_anime
+.anim_text
+    h1
+        font-size: $title-size
+        font-weight: 600
+        color: $Green
+    h2
+        font-size: $subtitle-size
+        font-weight: 600
+    p
+        font-size: $context-size
+//newsCard
+.cards_text
+    img
+        width: 85%
+    div
+        margin-bottom: 16px
+    div h1
+        font-size: $title-size
+        font-family: $font-family1
+        font-weight: 600
+        margin-bottom: 0
+        color: $Green
+        @media screen and ( min-width: 992px )
+            font-size: $title-size-xl
+    div h2
+        font-size: $context-size
+        font-weight: 600
+        color: $lightCoffee
+        @media screen and ( min-width: 992px )
+            font-size: $context-size-xl
+            
+.poster
+    img:not(.web_comBg1,.web_comBg2)
+        width: 100%
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2)
+
+    div h1
+        font-size: $title-size
+        font-family: $font-family1
+        font-weight: 600
+        margin-bottom: 0
+        color: $Green
+        @media screen and ( min-width: 992px )
+            font-size: $title-size-xl
+    div h2
+        font-size: $context-size
+        font-weight: 600
+        margin-top: 4px
+        color: $lightCoffee
+        @media screen and ( min-width: 992px )
+            font-size: $context-size-xl
+    div h3
+        font-size: $subtitle-size
+        font-weight: 600
+        color: $coffee
+        margin-top: 12px
+        margin-bottom: 4px
+        @media screen and ( min-width: 992px )
+            font-size: $subtitle-size-xl
+    div p
+        font-size: $context-size
+        color: #333
+        @media screen and ( min-width: 992px )
+            font-size: $context-size-xl
+//Revit
+.revit_content
+    div img
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3)
+
+
+.tab_menu
+    display: flex
+    margin-bottom: -1px
+    div
+        flex: 0 0 auto
+        padding: 8px 24px
+        border: 1px solid $Green
+        color: $Green
+        margin: 0
+        margin-right: -1px
+        cursor: pointer
+    .active
+        background-color: $Green
+        color: $lightGreen
+        font-weight: 600
+        position: relative
+        
+        &::before
+            position: absolute
+            bottom: -2px
+            left: 50%
+            transform: translateX(-50%)
+            content: ""
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 0 8px 8px 8px
+            border-color: transparent transparent $lightGreen transparent
+#tabBox
+    div
+        border: 1px solid $Green
+        display: none
+        padding: 16px
+        margin-bottom: 24px
+       
+        h2
+            font-size: $title-size
+            font-weight: 600
+            color: #333
+            position: relative
+            padding-left: 8px
+            margin-bottom: 24px
+            &::before
+                content: ""
+                position: absolute
+                top: 0
+                left: 0
+                width: 4px
+                height: 28px
+                background-color: $Green
+        h3
+            font-size: $subtitle-size
+            color: $coffee
+            font-weight: 600
+    .active
+        display: block
+//video
+.video
+    aspect-ratio: 16 / 9
