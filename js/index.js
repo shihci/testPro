@@ -56,11 +56,11 @@ window.onload=function(){
         });
     }
     
-    if(closed){
-        closed.addEventListener("click",()=>{
-            document.getElementById("menu_area").style.bottom="100%";  
-            });
-    }
+    // if(closed){
+    //     closed.addEventListener("click",()=>{
+    //         document.getElementById("menu_area").style.bottom="100%";  
+    //         });
+    // }
     
        
 }
@@ -71,9 +71,9 @@ window.onload=function(){
     // }
 
     
-    // function closefn(){
-    //     document.getElementById("menu_area").style.bottom="100%";
-    // }
+    function closefn(){
+        document.getElementById("menu_area").style.bottom="100%";
+    }
 
     let navDoM =document.getElementById("nav");
     function getNav(){
