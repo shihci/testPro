@@ -257,24 +257,32 @@ p
     color: $Green
     font-size: 16px
     font-weight: 600
+    
     &::before
         position: absolute
         content: ""
         left: 0
         top: 50%
         transform: translateY(-50%)
-        width: 45%
+        width: 0%
         height: 1px
         background-color: $Green
+        transition: 1.2s
     &:after
         position: absolute
         content: ""
         right: 0
         top: 50%
         transform: translateY(-50%)
-        width: 45%
+        width: 0%
         height: 1px
         background-color: $Green
+        transition: 1.2s
+    &.active::before
+        width: 45%
+    &.active::after
+        width: 45%
+
     .menuBox
         position: relative
         display: inline-block
@@ -283,6 +291,12 @@ p
         border-radius: 50px
         border: 1px solid $Green
         background-color: $Green
+        opacity: 0
+        transform: rotate3d(0,1,0,180deg)
+        transition: 1.2s
+        &.active
+            opacity: 1
+            transform: rotate3d(0,1,0,0deg)
         div
             position: absolute
             top: 50%

@@ -303,9 +303,11 @@ p {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 45%;
+  width: 0%;
   height: 1px;
   background-color: #007A79;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
 }
 
 .menu_title:after {
@@ -315,9 +317,19 @@ p {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 45%;
+  width: 0%;
   height: 1px;
   background-color: #007A79;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+.menu_title.active::before {
+  width: 45%;
+}
+
+.menu_title.active::after {
+  width: 45%;
 }
 
 .menu_title .menuBox {
@@ -328,6 +340,17 @@ p {
   border-radius: 50px;
   border: 1px solid #007A79;
   background-color: #007A79;
+  opacity: 0;
+  -webkit-transform: rotate3d(0, 1, 0, 180deg);
+          transform: rotate3d(0, 1, 0, 180deg);
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+.menu_title .menuBox.active {
+  opacity: 1;
+  -webkit-transform: rotate3d(0, 1, 0, 0deg);
+          transform: rotate3d(0, 1, 0, 0deg);
 }
 
 .menu_title .menuBox div {
